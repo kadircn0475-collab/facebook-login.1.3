@@ -3,8 +3,7 @@ body {
     margin: 0;
     background: #f0f2f5;
     font-family: Arial, sans-serif;
-    background-color: black;
-
+    background: #f2f4f7;
 }
 
 .box {
@@ -15,7 +14,7 @@ body {
     height: 100vh;
     padding: 20px 0;
     margin: 0 auto;
-    background-color: chocolate;
+    background: #f2f4f7;
 
 }
 
@@ -23,14 +22,14 @@ body {
     width: 500px;
     padding: 20px 0;
     margin-bottom: 200px;
-    background-color: #42b72a;
+    background: #f2f4f7;
 
 }
 
 .title-box img {
     width: 235px;
     margin-bottom: -10px;
-    background-color: bisque;
+    background: #f2f4f7;
 
 
 }
@@ -40,7 +39,7 @@ body {
     font-size: 27px;
     font-weight: normal;
     line-height: 32px;
-    background-color: brown;
+    background: #f2f4f7;
 }
 
 .form-box {
@@ -53,8 +52,8 @@ body {
     box-shadow: 0 2px 4px #0000001a, 0 8px 16px #0000001a;
     box-sizing: border-box;
     border: none;
-    margin-bottom:100px;
-    background-color: blueviolet;
+    margin-bottom: 100px;
+    background-color: white;
 
 }
 
@@ -134,12 +133,45 @@ body {
 
 }
 
+@media (max-width:900px) {
+    .box {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
 
-    
+    }
 
+    .title-box {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
 
+    .title-box img {
+        width: 200px;
+        margin: 0 auto;
 
+    }
 
+    .title-box p {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 0 10px;
+        height: 100%;
+        max-height:54px;    
+          
+    }
 
+    .form-box {
+        width: 100%;
+        max-width: 400px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
 
-    
+    .form-box input,
+    .form-box button {
+        width: 90%;
+    }
+
+}
